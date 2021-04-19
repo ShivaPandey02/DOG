@@ -1,7 +1,7 @@
   
   @font-face {
     font-family: underdog;
-    src: url(font/Underdog-Regular.ttf);
+    src: url(fonts/fontawesome-webfont.ttf);
   }
   *{
     font-family: underdog;
@@ -62,8 +62,7 @@
     border-radius: 42px;
     padding: 10px;
   }
-  img{
-    
+  img:not(.logo1){
     margin: auto;
     width: 100%;
     height: auto;

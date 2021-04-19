@@ -1,77 +1,299 @@
-<html>
-    <head>
-        <title>Know Your Dog </title>
-         <link rel="icon" type="image/gif" href="image/favicon.png" />
-    <meta charset="UTF-8">
-    <meta name="description" content="All Breed Dogs Information">
-    <meta name="author" content="Shiva Pandey">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"/>
-    <link rel="stylesheet" href="style.css">
-        
-    <body class="all">
-        
-        <div class="top"><br>Know Your Dog<img class="logopic" src="image/favicon.png">
-        <a href="photos.html">All Dogs</a></div><br>
-        <a href="cat.html">Cats</a></div><br>
-        
-        <div id="searchbox">
-        <select data-live-search="true" id="search" onChange="getmyDog(this.selectedIndex-1)"
-        title="Choose one ">
-        </select>
-    </div>
-        <br><br>
-    <div id="detail">
-        <div id="name">
-            <p>Search or select the breed from above  options</p>
-        </div>
-        
-            <div id="bred_for">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Know Your Pet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        </div>
-        <div id="origin">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">   
+<link href="css/font-awesome.css" rel="stylesheet"> <!-- font-awesome icons -->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
 
-        </div>
-        <div id="country_code">
+</head>
+<body> 
+	<!-- banner -->
+	<div class="w3ls-banner jarallax">
+		<div class="w3lsbanner-info">
+			<!-- header -->
+			<div class="header">
+				<div class="container">   
+					<div class="agile_header_grid"> 
+						<div class="header-mdl agileits-logo">
+							<a href="index.html"><img src="image/favicon.png" width="20%" height="auto"></a>
+							<span class="logotxt rainbow">Know Your PET</span>
+						</div>
+						<div class="header-nav">
+							<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button> 
+								</div>
+								<!-- top-nav -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<ul class="nav navbar-nav cl-effect-16">
+										<li><a href="index.html" class="active" data-hover="Home">Home</a></li>
+										<li><a href="about.html" data-hover="About">About</a></li> 
+										<li><a href="dog.html" data-hover="Dogs">Dogs</a></li>
+										<li><a href="cat.html" data-hover="Cats">Cats</a></li>
+									</ul>  
+									<div class="clearfix"> </div>	
+								</div>
+							</nav>    
+						</div>	
+						<div class="clearfix"> </div>
+					</div> 
+					
+				</div>	
+			</div>	
+			<!-- //header --> 
+			<!-- banner-text -->
+			<div class="banner-text agileinfo"> 
+				<div class="container">
+					<div class="agile_banner_info">
+						<div class="agile_banner_info1">
+							<h6>Live. Laugh. Bark.</h6>
+							<div id="typed-strings" class="agileits_w3layouts_strings">
+								<p>Welcome to<i> Best Pets</i></p>
+								<p><i>Keep calm</i> and <i>have a pet</i></p>
+								<p>Dogs are man's <i>Best Friend</i></p>
+							</div>
+							<span id="typed" style="white-space:pre;"></span>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<!-- //banner-text -->  
+		</div>	
+	</div>	
+	<!-- //banner -->
+	<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="col-md-4 bnr-agileitsgrids">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class="col-xs-4 wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_banner_bottom_grid_right">	
+						<h4>DOGS</h4>
+						<p>Morbi viverra lacus commodo felis semper, eu iaculis lectus feugiat.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 bnr-agileitsgrids w3grid1">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class="col-xs-4 wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_banner_bottom_grid_right">	
+						<h4>CATS</h4>
+						<p>Morbi viverra lacus commodo felis semper, eu iaculis lectus feugiat.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 bnr-agileitsgrids w3grid2">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class="col-xs-4 wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa fa-comment-o" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_banner_bottom_grid_right">	
+						<h4>Contact <a href="https://www.petaindia.com/" style="color: black; text-decoration: underline;">PETA</a> </h4>
+						<p>To help an Animal who's in immediate physical danger or in urgent need of veterinary
+							care, please call emergency number<br> <a href="tel: 9820122602" style="color:#F44336; font-size: 120%;">(0) 9820122602</a>
+						</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- //banner-bottom -->
+	<!-- welcome -->	
+	<div class="welcome">
+		<div class="container"> 
+			<div class="col-md-6 w3ls_welcome_right"> 
+				<div class="flexslider">
+					<ul class="slides">
+						<li>	
+							<div class="agileits_w3layouts_welcome_grid">
+								<img src="images/g1.jpg" alt=" " class="img-responsive" />
+							</div>
+						</li>
+						<li>	
+							<div class="agileits_w3layouts_welcome_grid">
+								<img src="images/g2.jpg" alt=" " class="img-responsive" />
+							</div>
+						</li>
+						<li>	
+							<div class="agileits_w3layouts_welcome_grid">
+								<img src="images/g3.jpg" alt=" " class="img-responsive" />
+							</div>
+						</li>
+					</ul>
+				</div> 
+			</div>
+			<div class="col-md-6 w3ls_welcome_left"> 
+				<div class="w3ls_welcome_right1">
+					<h3 class="agileits-title">About Us</h3>
+					<h6>Lorem ipsum dolor <span> Consectetur </span> sit amet adipisicing elit. </h6>
+					<p>Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+					<div class="w3l_more">
+						<a href="#" class="button button--nina" data-text="Learn more" data-toggle="modal" data-target="#myModal">
+							<span>L</span><span>e</span><span>a</span><span>n</span> <span>m</span><span>o</span><span>r</span><span>e</span>
+						</a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="services jarallax">
+		<div class="container">   
+			<h3 class="agileits-title w3title1">Spread Happiness</h3>
+			<div class="services-w3ls-row">
+			<a href="http://www.adoptapet.com" target="_blank">
+				<div class="col-md-3 col-sm-3 col-xs-6 services-grid">
+					<span class="glyphicon glyphicon-list-alt effect-1" aria-hidden="true"></span>
+					<h5>Adopt a DOG</h5>
+					<p>Get a new Friend today. Adopt a Dog once and be Happy lifetime.</p>
+				</div>
+			</a>
+			<a href="http://www.adoptapet.com" target="_blank">
+				<div class="col-md-3 col-sm-3 col-xs-6 services-grid">
+					<span class="glyphicon glyphicon-list-alt effect-1" aria-hidden="true"></span>
+					<h5>Adopt a CAT</h5>
+					<p>Time spent with cats is never Wasted. Get one Princess foe your Palace</p>
+				</div>
+			</a>
+			<a href="http://www.adoptapet.com/animal-shelters" target="_blank">
+				<div class="col-md-3 col-sm-3 col-xs-6 services-grid">
+					<span class="glyphicon glyphicon-tree-deciduous effect-1" aria-hidden="true"></span>
+					<h5>Volunteer</h5>
+					<p>Even if you can't adopt a pet just now, you can help make lifebetter for animals by
+						volunterring with you local shelter.
+					</p>
+				</div>
+			</a>
+				<a href="http://bestfriends.org/donate" target="_blank">
+				<div class="col-md-3 col-sm-3 col-xs-6 services-grid">
+					<span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
+					<h5>DONATE</h5>
+					<p>Every animal shelter and rescue organization has bills to pay and your gnerous monetary 
+						will be greatfully accepted.</p>
+				</div> 
+			</a>
+				<div class="clearfix"> </div>
+			</div>  
+		</div> 
+	</div>
+	<!-- //services -->
+	
+	<div class="footer">
+		<div class="footer-bottom">
+			<div class="container">
+				<p>Know Your PET | Design by <a href="http://allaboutshivapandey.web.app">Shiva Pandey</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	
 
-        </div>
-        <div id="temperament">
+	<script src="js/jquery-2.2.3.min.js"></script>  
+	<!-- //js -->  
+	<!-- jarallax -->  
+	<script src="js/SmoothScroll.min.js"></script> 
+	<script src="js/jarallax.js"></script> 
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script> 
+	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true   // 100% fit in a container
+			});
+		});
+	</script>
+	<script src="js/typed.js" type="text/javascript"></script>
+    <script>
+		$(function(){
 
-        </div>
-        <div id="breed_group">
+			$("#typed").typed({
+				stringsElement: $('#typed-strings'),
+				typeSpeed: 30,
+				backDelay:700,
+				loop: true,
+				contentType: 'html', // or text
+				// defaults to false for infinite loop
+				loopCount: false,
+				callback: function(){ foo(); },
+				resetCallback: function() { newTyped(); }
+			});
 
-        </div>
-        <div id="life_span">
+			$(".reset").click(function(){
+				$("#typed").typed('reset');
+			});
 
-        </div>
-        <div id="height">
+		}); 
 
-        </div>
-        <div id="weight">
-
-        </div>
-        <div id="description">
-
-        </div>
-    </div>
-    <div id="image">
-        <img id="dogPic" onclick="opnimage()">
-        <div id="dogName"> <p>Search for your dog</p></div>
-    </div>
-    <br><br>
-    <footer>
-        Designed and Developed by <a href="https://allaboutshivapandey.web.app/" target="_blank">Shiva Pandey</a>
-    </footer>
-
-
-    </body>
-
-
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-
+		function foo(){ console.log("Callback"); }
+    </script>
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+    <script src="js/bootstrap.js"></script>
+</body>
 </html>

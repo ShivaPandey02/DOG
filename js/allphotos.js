@@ -19,7 +19,7 @@ async function getDog() {
         
     // }
     // else{
-    //     dogname = dogname1[dogname1.length-1];
+    //     dogname = dogname1[dogname1.length-1];`
     // }
     console.log(dogname)
     console.log(dogs);

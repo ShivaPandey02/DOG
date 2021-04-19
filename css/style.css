@@ -1,9 +1,25 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
+.rainbow {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight:  bolder;
+    font-size: 3rem;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 5s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
 body{
 	margin:0;
 	font-family: 'Lato', sans-serif;
@@ -125,7 +141,7 @@ body a:hover,body a:focus{
     letter-spacing: 3px;
 } 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav li a.active {
-    color:#F44336;
+    color:rgb(198 28 244);
 } 
 .navbar-default .navbar-nav li  a:hover:before,.navbar-default .navbar-nav li a.active:before{
 	width: 100%;
@@ -154,7 +170,7 @@ ul.dropdown-menu {
 	text-shadow: 0 0 1px rgba(111,134,134,0.3);
 } 
 .cl-effect-16 a::before {
-	color:#F44336;
+	color:rgb(25 160 201);
 	content: attr(data-hover);
 	position: absolute;
 	opacity: 0;
