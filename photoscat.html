@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Know You Dog </title>
+        <link rel="icon" type="image/gif" href="image/favicon.png" />
+   <meta charset="UTF-8">
+   <meta name="description" content="All Breed Dogs Information">
+    <meta name="author" content="Shiva Pandey">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: rgb(221, 172, 240);
+            }
+            #container,img {
+                display: inline;
+                position: relative;
+                margin: auto;
+                width: 370px;
+                height: 250px;
+                border-radius: 42px;
+                padding: 10px;
+            }
+            #content{
+                
+                text-align: center;
+                content: attr(title);
+                color: rgb(255, 255, 255);
+                padding-left: 5px;
+                position: absolute;
+                display: block;
+                width: 90%;
+                height: auto;
+                opacity:0;
+                min-height: 30px;
+                background: rgb(0, 0, 0);
+                bottom: 27px;
+                left: 18px;
+                border-bottom-left-radius: 23px;
+                border-bottom-right-radius: 23px;
+            }
+            #container:hover #content{
+                opacity: 1;
+                visibility: hidden;
+            }
+            .top{
+                width: 100%;
+                height: 15%;
+                background-color: black;
+                color: white;
+                font-size: 150%;
+                font-weight: bolder;
+                text-align: center;
+            }
+            a{
+                float: left;
+                color: #007bff;
+                text-decoration: none;
+                background-color: transparent;
+            }
+
+                            
+            button {
+                position: absolute;
+                background-color: red;
+                width: 500px;
+                left:10px;
+                /* top: 180px; */
+                text-align: center;
+                opacity: 0;
+                transition: opacity .35s ease;
+                }
+
+            button {
+                width: 200px;
+                padding: 12px 48px;
+                text-align: center;
+                color: white;
+                border: solid 2px white;
+                z-index: 1;
+                }
+
+            #container:hover button {
+                opacity: 1;
+                }
+
+        </style>
+        
+    </head>
+    <body id="body">
+        <div class="top"><br>Know Your Dog 🐶 <a href="index.html">Back</a></div><br>
+        
+    </body>
+    <script src="photoscat.js"></script>
+</html>
