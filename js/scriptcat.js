@@ -2,7 +2,8 @@
 const url = `https://api.thecatapi.com/v1/breeds`;
 const form = document.querySelector("form");
 let dogs, data, dogos, img, height, dogname;
-let manmade = 12;
+let randomnum = Math.floor(Math.random()*60);
+console.log(randomnum)
 
 async function getDog() {
     const res = await fetch(url);
@@ -10,6 +11,7 @@ async function getDog() {
     dogs = data.map(dog => dog.name);
     
     loop(dogs);
+    getmyDog(randomnum);
 }
 
 getDog();
@@ -28,7 +30,9 @@ function loop(xx) {
 }
 
 function getmyDog(dogo) {
+    
     dogos = data[dogo];
+    console.log(data)
 
     update('name', 'Breed');    
     update('bred_for', 'Bred_for');
@@ -42,11 +46,23 @@ function getmyDog(dogo) {
     let weight = dogos.weight.imperial;
     document.getElementById("weight").innerHTML ="Weight:- " + weight +" Kg";
     update('description', 'Description');
+    
+    let wik= document.getElementById("wiki");
+    
+    let wikilink = document.createElement("a");
+    wikilink.innerHTML= "Click here to read more.."
+    wikilink.href = dogos.wikipedia_url;
+    wikilink.target="_blank";
+    wik.appendChild(wikilink);
+
+
+    // update('wiki', 'wikipedia_url');
     img = dogos.image.url;
     document.getElementById("dogPic").src = img;
     document.body.style.backgroundImage = `url(${img})`;
 
-    document.getElementById("dogName").innerHTML = dogos.name + "<a href = morecatimages.html> More images<a>";
+    document.getElementById("dogName").innerHTML = dogos.name;
+    //  + "<a href = morecatimages.html> More images<a>";
     dogname = dogos.name;
     console.log(dogname);
     window.localStorage.setItem('user', JSON.stringify(dogname));

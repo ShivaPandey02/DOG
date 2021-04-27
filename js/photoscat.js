@@ -17,16 +17,10 @@ function img_create(url) {
     let div = document.createElement('div');
     div.id = "container";
     var img = document.createElement('img');
-    let btn = document.createElement('button');
-    let lnk = document.createElement('a');
+   
     img.src = url;
-    lnk.href = url;
-    lnk.download = url;
-    lnk.innerHTML="Download"
-    
+
     div.appendChild(img);
-    div.appendChild(btn);
-    btn.appendChild(lnk);
 
     document.body.appendChild(div);
 

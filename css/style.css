@@ -51,7 +51,6 @@ body a:hover,body a:focus{
 } 
 /*-- banner --*/ 
 .w3ls-banner{ 
-	background:url(../images/1.jpg)no-repeat center;
 	-webkit-background-size:cover;
 	-moz-background-size:cover; 
 	background-size:cover;
