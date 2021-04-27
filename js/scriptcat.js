@@ -46,21 +46,46 @@ function getmyDog(dogo) {
     let weight = dogos.weight.imperial;
     document.getElementById("weight").innerHTML ="Weight:- " + weight +" Kg";
     update('description', 'Description');
-    
+
+    $('.Wikipidea').remove();
     let wik= document.getElementById("wiki");
     
     let wikilink = document.createElement("a");
     wikilink.innerHTML= "Click here to read more.."
     wikilink.href = dogos.wikipedia_url;
+    wikilink.className= "Wikipidea";
     wikilink.target="_blank";
     wik.appendChild(wikilink);
 
 
+
+    // if(!wik){
+       
+    //     wikilink.href = dogos.wikipedia_url;
+    // }
+    // else{
+    //     console.log("ojkay")
+    //     let wikilink = document.createElement("a");
+    //     wikilink.innerHTML= "Click here to read more.."
+    //     wikilink.href = dogos.wikipedia_url;
+    //     wikilink.className= "Wikipidea";
+    //     wikilink.target="_blank";
+    //     wik.appendChild(wikilink);
+    // }
+
+
     // update('wiki', 'wikipedia_url');
-    img = dogos.image.url;
-    document.getElementById("dogPic").src = img;
+    
+    if(dogos.image.url === null){
+        document.getElementById("dogPic").innerHTML = "Image is not available in Database.";
+    }
+    else{
+        img = dogos.image.url;
+        document.getElementById("dogPic").src = img;
     document.body.style.backgroundImage = `url(${img})`;
 
+    }
+    
     document.getElementById("dogName").innerHTML = dogos.name;
     //  + "<a href = morecatimages.html> More images<a>";
     dogname = dogos.name;
